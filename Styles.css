@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+
+main {
+            background: url("Images/windmill.jpeg") center/cover no-repeat;
+            padding-top: 10%;  
+}
+main {
+  scroll-snap-type: y mandatory; /* Vertical scrolling with mandatory snapping */
+}
+
+.section {
+  scroll-snap-align: start; /* Snap to the start of each section */
+  scroll-snap-stop: always; /* Ensure consistent snapping behavior */
+}
+.neumorphic-card {
+    background: #f0f0f0;
+    border-radius: 15px; 
+    padding: 10px;
+    box-shadow: 5px 5px 15px #bebebe, -5px -5px 15px #ffffff; /* Neumorphic shadow effect */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.neumorphic-card img {
+    border-radius: 50%; 
+    max-width: 100px;
+}
+
+.shadow-inner1:hover {
+    --tw-shadow: inset 0x 4px 14px 0 rgb(0 0 0 / 0.05);
+    --tw-shadow-colored: inset 0 12px 4px 0 var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.transition-all1 {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 350ms;
+}
+
+@font-face {
+  font-family: 'Agbalumo';
+  src: url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap') format('woff2');
+  /* You may need to specify other formats like woff or ttf depending on the font source */
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-Agbalumo{
+    font-family:"Agbalumo";
+}
+.font-syne{
+    font-family: 'syne';
+}
+.font-heebo{
+    font-family: 'heebo';
+}
+.roundedimg{
+    border-radius: 400px;
+}

@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>EEE Website</title>
+</head>
+
+<body>
+    <nav>
+        <div class="bg-green-300 justify-start flex flex-col">
+            <div class="flex items-center justify-between h-16 mx-10">
+                <div class="flex-shrink-0 flex flex-start">
+                    <a href="index.html"> <img class="h-16 w-32" src="Images/LOGO-with-different-colors-03.png"
+                            alt="Workflow" /></a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#home"
+                            class="hover-bg-gray-700 text-black px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                        <a href="#about"
+                            class="text-black hover-bg-gray-700 hover-text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
+                        <a href="#our-faculties"
+                            class="text-black hover-bg-gray-700 hover-text-white px-3 py-2 rounded-md text-sm font-medium">Our
+                            Faculties</a>
+                        <a href="#our-works"
+                            class="text-black hover-bg-gray-700 hover-text-white px-3 py-2 rounded-md text-base font-medium">Our
+                            Services</a>
+                        <a href="#contact"
+                            class="text-black hover-bg-gray-700 hover-text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                        <select onchange="location = this.value;" class="p-3 rounded-xl bg-green-600">
+                            <option value="index.html">EEE</option>
+                            <option value="civil.html">Civil</option>
+                            <option value="chem.html">Chemistry</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="button"
+                    class="bg-slate-900 md:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover-text-white hover-bg-gray-800 focus-outline-none focus-ring-2 focus-ring-offset-2 focus-ring-offset-gray-800 focus-ring-white"
+                    aria-controls="mobile-menu" aria-expanded="false" onclick="toggleMobileMenu()">
+                    <span class="sr-only">Open main menu</span>
+                    <svg id="firstSvg" class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                    <svg id="secondSvg" class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" style="display: none;">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden bg-green-500" style="display:none;">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home"
+                    class="hover-bg-gray-700 text-black block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="#about"
+                    class="text-black hover-bg-gray-700 hover-text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
+                <a href="#our-faculties"
+                    class="text-black hover-bg-gray-700 hover-text-white block px-3 py-2 rounded-md text-base font-medium">Our
+                    Faculties</a>
+                <a href="#our-works"
+                    class="text-black hover-bg-gray-700 hover-text-white block px-3 py-2 rounded-md text-base font-medium">Our
+                    Services</a>
+                <a href="#contact"
+                    class="text-black hover-bg-gray-700 hover-text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+                <select onchange="location = this.value;" class="p-3 rounded-xl">
+                    <option value="index.html">EEE</option>
+                    <option value="civil.html">Civil</option>
+                    <option value="chem.html">Chemistry</option>
+                </select>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class=" md:pl-10 mt-10 md:mt-0">
+            <div class="md:text-4xl text-2xl font-medium ml-10 md-ml-20 bg-windmill">
+                <h1>Civil</h1>
+                <h1 class="ml-10">CONSULTANCY</h1>
+                <h1 class="ml-24">SERVICES</h1>
+            </div>
+            <br />
+            <br />
+            <h1 class="text-white text-2xl md-text-4xl font-bold ml-10 md-ml-20 font-syne">
+                "FOR YOUR BETTER
+                <br /> <span class="space-y-2 text-green-900">TOMORROW</span>,
+                SAVE <br />
+                ENERGY <span class="space-y-2 text-blue-500">TODAY</span>"
+            </h1>
+            <br />
+            <br />
+            <div class="md:pl-2 ml-10 md:ml-20=">
+                <button id="aboutButton"
+                    class="bg-green-400 rounded-3xl p-3 flex md-p-4 px-8 md-px-10rounded-xl shadow-md bg-gradient-to-br from-green-400 to-green-600 transition-transform transform hover:scale-105">
+                    Know More
+                    <div>
+                        <span> →</span>
+                    </div>
+                </button>
+            </div>
+            <script>
+                document.getElementById("aboutButton").addEventListener("click", function () {
+                    const aboutSection = document.getElementById("about");
+                    if (aboutSection) {
+                        aboutSection.scrollIntoView({ behavior: "smooth" });
+                    }
+                });
+            </script>
+
+        </div>
+        <br /><br /><br /><br /><br /><br /><br />
+    </main>
+    <section class="md:flex bg-green-900 section pt-10" id="about">
+        <div class="m-10 flex-1">
+            <h6 class="text-yellow-300 m-5 font-bold text-3xl flex justify-center font-syne">About us</h6>
+            <h3 class="text-black md:text-2xl text-xl my-4 font-extrabold">Department of Electrical and Electronics
+                Engineering
+            </h3>
+            <h6 class="my-10 text-white">The Department of Electrical and Electronics Engineering offers
+                Bachelor of Engineering in Electrical and Electronics Engineering
+                and Master of Engineering in Power Systems Engineering Research
+                programmes: Ph.D. in Electrical and Electronics Engineering. The
+                specializations of the department are Energy Auditing and survey
+                management, Power Systems, High Voltage Engineering, Power
+                Electronics and Drives, Control and Instrumentation, Embedded System
+                Technology, Electric Drives and Embedded Control. The Department has
+                well-equipped Machines, Power Analyzer, Power Electronics and Power
+                System Laboratories and a team of dedicated faculty members who have
+                experience in the Industry as well as Academic.</h6>
+            <button id="servicesButton"
+                class="my-5 p-3 rounded-xl shadow-md bg-gradient-to-br from-green-400 to-green-600 transition-transform transform hover:scale-105">
+                Our Services
+            </button>
+            <script>
+                document.getElementById("servicesButton").addEventListener("click", function () {
+                    const servicesSection = document.getElementById("services");
+
+                    if (servicesSection) {
+                        servicesSection.scrollIntoView({ behavior: "smooth" });
+                    }
+                });
+            </script>
+
+
+        </div>
+        <div class="md:flex-1 md:m-10 ">
+            <div class="md:flex">
+                <div data-aos="flip-left" data-aos-duration="1000">
+                    <div class="bg-zinc-900 w-fit hover:shadow-2xl transition-all rounded-3xl p-7 m-4">
+                        <i class="fa-solid fa-book" style="color: #2ec27e;"></i>
+                        <h6 class="text-white">Academic Programs</h6>
+                        <p class="text-gray-400">The Department of Electrical and Electronics Engineering offers
+                            Bachelor of
+                            Engineering in
+                            Electrical
+                            and Electronics
+                            Engineering, Master of Engineering in Power Systems Engineering Research, and a Ph.D.
+                            program in
+                            Electrical and
+                            Electronics Engineering.</p>
+                    </div>
+                </div>
+                <div data-aos="flip-left" data-aos-duration="1500">
+                    <div class="bg-zinc-900 w-fit shadow-2xl rounded-3xl p-7 m-4">
+
+                        <i class="fa-solid fa-shield-halved" style="color: #2ec27e;"></i>
+                        <h6 class="text-white">Specializations</h6>
+                        <p class="text-gray-400">The Department specializes in various areas, including Energy Auditing
+                            and
+                            survey management,
+                            Power
+                            Systems, High
+                            Voltage Engineering, Power Electronics and Drives, Control and Instrumentation, Embedded
+                            System
+                            Technology, Electric
+                            Drives, and Embedded Control.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="md:flex">
+                <div data-aos="flip-left" data-aos-duration="2000">
+                    <div class="bg-zinc-900 w-fit shadow-2xl rounded-3xl p-7 m-4">
+                        <i class="fa-solid fa-flask" style="color: #2ec27e;"></i>
+                        <h6 class="text-white">Laboratory Facilities</h6>
+                        <p class="text-gray-400">The department boasts well-equipped laboratories, including Machines,
+                            Power
+                            Analyzer, Power
+                            Electronics, and Power
+                            System Laboratories, ensuring students have hands-on experience</p>
+                    </div>
+                </div>
+                <div data-aos="flip-left" data-aos-duration="3000">
+                    <div class="bg-zinc-900 w-fit shadow-2xl rounded-3xl p-7 m-4">
+                        <i class="fa-solid fa-person-chalkboard" style="color: #2ec27e;"></i>
+                        <h6 class="text-white">Experienced Faculty</h6>
+                        <p class="text-gray-400">A team of dedicated faculty members with both industry and academic
+                            experience guides students in
+                            their educational
+                            journey, providing valuable insights and expertise.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        </div>
+        </div>
+    </section>
+    <section class="bg-gray-100 pb-10" id="our-faculties">
+        <h1 class="flex justify-center font-extrabold text-3xl py-10 font-syne">Our Faculties</h1>
+        <div class="flex flex-wrap justify-evenly ">
+            <div data-aos="zoom-in" data-aos-duration="1000"
+                class="bg-white md:px-14 rounded-xl mx-10 mt-5 p-10 w-fit flex flex-col flex-wrap items-center justify-center shadow-lg transition-all1 hover:shadow-inner shadow-inner1">
+                <img src="Images/vaigundamoorthihod.png" alt="HOD" class="w-28 rounded-full">
+                <h6 class="text-xl">Dr. M. Vaigundamoorthi</h6>
+                <p class="text-sm">Certified energy manager</p>
+                <button
+                    class="p-3 bg-green-500 mt-4 rounded-2xl hover:bg-transparent hover:border-green-500 border-2 transition-all">Read
+                    More</button>
+            </div>
+            <div data-aos="zoom-in" data-aos-duration="1000"
+                class="bg-white md:px-14 rounded-xl mx-10 mt-5 p-10 w-fit flex flex-col flex-wrap items-center justify-center shadow-lg transition-all1 shadow-inner1">
+                <img src="Images/balachandran.png" alt="HOD" class="w-28 rounded-full">
+                <h6 class="text-xl">Dr. M. balachandran</h6>
+                <p class="text-sm">Certified energy manager</p>
+                <button
+                    class="p-3 bg-green-500 mt-4 rounded-2xl hover:bg-transparent hover:border-green-500 border-2 transition-all">Read
+                    More</button>
+
+            </div>
+            <div data-aos="zoom-in" data-aos-duration="900"
+                class="bg-white md:px-14 rounded-xl mx-10 mt-5 p-10 w-fit flex flex-col flex-wrap items-center justify-center shadow-lg transition-all1 shadow-inner1">
+                <img src="Images/nagaveni.png" alt="HOD" class="w-28 rounded-full">
+                <h6 class="text-xl">Dr. M. Nagaveni</h6>
+                <p class="text-sm">Certified energy manager</p>
+                <button
+                    class="p-3 bg-green-500 mt-4 rounded-2xl hover:bg-transparent hover:border-green-500 border-2 transition-all">Read
+                    More</button>
+
+            </div>
+            <div data-aos="zoom-in" data-aos-duration="1000"
+                class="bg-white md:px-14 rounded-xl mx-10 mt-5 p-10 w-fit flex flex-col flex-wrap items-center justify-center shadow-lg transition-all1 shadow-inner1">
+                <img src="Images/selvaganapathi.png" alt="HOD" class="w-28 rounded-full">
+                <h6 class="text-xl">Dr. M. Selvaganapathi</h6>
+                <p class="text-sm">Certified energy manager</p>
+                <button
+                    class="p-3 bg-green-500 mt-4 rounded-2xl hover:bg-transparent hover:border-green-500 border-2 transition-all">Read
+                    More</button>
+
+            </div>
+            <div data-aos="zoom-in" data-aos-duration="1000"
+                class="bg-white md:px-14 rounded-xl mx-10 mt-5 p-10 w-fit flex flex-col flex-wrap items-center justify-center shadow-lg transition-all1 shadow-inner1">
+                <img src="Images/sivaramkumar.png" alt="HOD" class="w-28 rounded-full">
+                <h6 class="text-xl">Dr. Sivaramkumar</h6>
+                <p class="text-sm">Certified energy manager</p>
+                <button
+                    class="p-3 bg-green-500 mt-4 rounded-2xl hover:bg-transparent hover:border-green-500 border-2 transition-all">Read
+                    More</button>
+
+            </div>
+        </div>
+        <br>
+    </section>
+    <section id="services">
+        <h1 class="flex justify-center text-2xl font-extrabold mt-10 font-syne" id="our-works">Our Services</h1>
+        <p class="flex justify-center mx-5 my-2 text-yellow-900">Powering Progress with Expert Electrical Services. Your
+            Trusted Partner for a
+            Brighter Tomorrow.</p>
+
+        <div class="flex flex-wrap font-syne justify-evenly">
+            <div class="w-fit flex flex-col items-center m-12" data-aos="zoom-out-up" data-aos-duration="1000">
+                <div class="absolute text-9xl font-Agbalumo opacity-20">01</div>
+                <div class="flex justify-center mt-24 z-50 text-black font-extrabold text-2xl font-heebo">Electrical
+                    Distribution
+                    system</div>
+                <div class="align-bottom max-w-xs ">An Electrical Distribution System is vital for efficient power
+                    transmission in buildings. It comprises transformers,
+                    switchgear, and panels, guaranteeing safe and reliable electricity distribution, a core aspect of
+                    our electrical
+                    consultancy services.</div>
+            </div>
+            <div class="w-fit flex flex-col items-center m-12" data-aos="zoom-out-up" data-aos-duration="1500">
+                <div class="absolute text-9xl font-Agbalumo opacity-20">02</div>
+                <div class="flex justify-center mt-24 z-50 text-black font-extrabold text-2xl font-heebo">PF Improvement
+                    study</div>
+                <div class="align-bottom max-w-xs ">Our Power Factor Improvement (PF) Study is a crucial service aimed
+                    at enhancing energy efficiency. We analyze and
+                    optimize power factor correction solutions, resulting in reduced energy costs and improved system
+                    performance.</div>
+            </div>
+            <div class="w-fit flex flex-col items-center m-12" data-aos="zoom-out-up" data-aos-duration="2000">
+                <div class="absolute text-9xl font-Agbalumo opacity-20">03</div>
+                <div class="flex justify-center mt-24 z-50 text-black font-extrabold text-2xl font-heebo">PQ Study /
+                    Harmonics</div>
+                <div class="align-bottom max-w-xs ">Our Power Quality (PQ) Study and Harmonics Analysis service is
+                    dedicated to maintaining the quality and reliability of
+                    your electrical systems. Through meticulous analysis and corrective measures, we enhance power
+                    quality, reducing issues
+                    caused by harmonics.</div>
+            </div>
+            <div class="w-fit flex flex-col items-center m-12" data-aos="zoom-out-up" data-aos-duration="2000">
+                <div class="absolute text-9xl font-Agbalumo opacity-20">04</div>
+                <div class="flex justify-center mt-24 z-50 text-black font-extrabold text-2xl font-heebo">Capacitor
+                    performance</div>
+                <div class="align-bottom max-w-xs ">Capacitor performance is a vital aspect of electrical systems.
+                    Capacitors store and release electrical energy, enhancing
+                    power factor and efficiency. Regular evaluation and maintenance of capacitor performance are
+                    essential for ensuring a
+                    reliable and cost-effective electrical infrastructure.</div>
+            </div>
+            <div class="w-fit flex flex-col items-center m-12" data-aos="zoom-out-up" data-aos-duration="2000">
+                <div class="absolute text-9xl font-Agbalumo opacity-20">05</div>
+                <div class="flex justify-center mt-24 z-50 text-black font-extrabold text-2xl font-heebo">Transformer
+                    optimization</div>
+                <div class="align-bottom max-w-xs ">Transformer optimization is key to efficient power distribution. We
+                    specialize in analyzing and enhancing transformer
+                    performance, resulting in reduced energy loss and improved system reliability. Our expertise ensures
+                    your electrical
+                    infrastructure operates at its best.</div>
+            </div>
+            <div class="w-fit flex flex-col items-center m-12" data-aos="zoom-out-up" data-aos-duration="2000">
+                <div class="absolute text-9xl font-Agbalumo opacity-20">06</div>
+                <div class="flex justify-center mt-24 z-50 text-black font-extrabold text-2xl font-heebo">Cable sizing &
+                    loss reduction</div>
+                <div class="align-bottom max-w-xs ">Proper cable sizing is essential for minimizing energy loss and
+                    ensuring electrical safety. Our service includes
+                    meticulous cable sizing to reduce power losses and enhance system efficiency. This is crucial for
+                    cost-effective and
+                    reliable electrical installations.</div>
+            </div>
+            <div class="w-fit flex flex-col items-center m-12" data-aos="zoom-out-up" data-aos-duration="4000">
+                <div class="absolute text-9xl font-Agbalumo opacity-20">07</div>
+                <div class="flex justify-center mt-24 z-50 text-black font-extrabold text-2xl font-heebo">Motor loading
+                    survey</div>
+                <div class="align-bottom max-w-xs ">Our Motor Loading Survey is a comprehensive analysis of motor
+                    performance. We assess motor efficiency, identify issues,
+                    and recommend improvements. This service ensures optimal functionality, reduces energy consumption,
+                    and enhances the
+                    longevity of your motors.</div>
+            </div>
+            <div class="w-fit flex flex-col items-center m-12" data-aos="zoom-out-up" data-aos-duration="4500">
+                <div class="absolute text-9xl font-Agbalumo opacity-20">08</div>
+                <div class="flex justify-center mt-24 z-50 text-black font-extrabold text-2xl font-heebo">Lighting
+                    system</div>
+                <div class="align-bottom max-w-xs ">Effective lighting systems are vital for safety and productivity. We
+                    design and install energy-efficient lighting
+                    solutions, optimizing illumination while minimizing power consumption. Our expertise ensures
+                    well-lit and sustainable
+                    spaces.</div>
+            </div>
+            <div class="w-fit flex flex-col items-center m-12" data-aos="zoom-out-up" data-aos-duration="5000">
+                <div class="absolute text-9xl font-Agbalumo opacity-20">09</div>
+                <div class="flex justify-center mt-24 z-50 text-black font-extrabold text-2xl font-heebo">Electrical
+                    Safety </div>
+                <div class="align-bottom max-w-xs ">Electrical safety is paramount. We provide rigorous safety
+                    assessments, training, and solutions to prevent electrical
+                    hazards. Trust us to keep your electrical systems secure and compliant, safeguarding both people and
+                    property.</div>
+            </div>
+
+
+        </div>
+
+    </section>
+    <section class="bg-slate-200 p-20" data-aos="fade-up">
+        <h1 class="m-10 flex justify-center font-syne font-extrabold text-2xl"> Our Works</h1>
+
+        <div class="grid md:grid-cols-4 md:gap-3 grid-cols-1 gap-4 items-center content-center">
+            <img src="Images/work4.jpeg" alt="work"
+                class="grayscale hover:grayscale-0 transition-all md:w-64 md:h-64 w-72 h-64" data-aos="fade-up">
+            <img src="Images/work1.jpeg" alt="work"
+                class="grayscale hover:grayscale-0 transition-all md:w-64 md:h-64 w-72 h-64 " data-aos="fade-up">
+            <img src="Images/work5.jpeg" alt="work"
+                class="grayscale hover:grayscale-0 transition-all md:w-64 md:h-64 w-72 h-64" data-aos="fade-up">
+            <img src="Images/work7.jpeg" alt="work"
+                class="grayscale hover:grayscale-0 transition-all md:w-64 md:h-64 w-72 h-64" data-aos="fade-up">
+            <img src="Images/work8.jpeg" alt="work"
+                class="grayscale hover:grayscale-0 transition-all md:w-64 md:h-64 w-72 h-64" data-aos="fade-up">
+            <img src="Images/work6.jpeg" alt="work"
+                class="grayscale hover:grayscale-0 transition-all md:w-64 md:h-64 w-72 h-64" data-aos="fade-up">
+            <img src="Images/work9.jpeg" alt="work"
+                class="grayscale hover:grayscale-0 transition-all md:w-64 md:h-64 w-72 h-64 " data-aos="fade-up">
+        </div>
+    </section>
+
+    <footer class="bg-green-500 md:flex p-24 justify-evenly">
+        <div class="m-2 md:pb-0 pb-10">
+            <h2 class="font-heebo text-xl mb-3">Contact</h2>
+            <p class="font-Agbalumo mb-2">Mrs. P. Nagaveni</p>
+            <p class="font-syne mb-2">Mobile : 9600396715</p>
+            <p class="font-syne">Email Id : nagaveni.p@kahedu.edu.in</p>
+        </div>
+
+        <hr class="vertical-line">
+
+        <div class="font-syne m-2 pb-8 md:pb-0">
+            <h1 class="font-heebo text-xl mb-3">FACULTY COORDINATORS</h1>
+            <h6 class="font-Agbalumo">Dr. A. AMUDHA, Ph.D</h6>
+            <p class="mb-2">Head & Dean</p>
+            <h6 class="font-Agbalumo">Dr. V. J. VIJAYALAKSHMI, Ph.D</h6>
+            <p class="mb-2">Certiﬁed Energy Manager</p>
+            <h6 class="font-Agbalumo">Mrs. P. NAGAVENI, M.E</h6>
+            <p class="mb-2">Certiﬁed Energy Manager</p>
+        </div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.6046292254923!2d76.98510817426192!3d10.91762238923985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba85af2d5b63f75%3A0x958123c48e7c849d!2sKarpagam%20Academy%20of%20Higher%20Education!5e0!3m2!1sen!2sin!4v1699178050594!5m2!1sen!2sin"
+            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            class="mt-4 md:mt-0 hidden md:block" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        let isOpen = false;
+        let isSecondSvg = false;
+
+        function toggleMobileMenu() {
+            isOpen = !isOpen;
+            const mobileMenu = document.getElementById("mobile-menu");
+            mobileMenu.style.display = isOpen ? "block" : "none";
+
+            isSecondSvg = !isSecondSvg;
+            const firstSvg = document.getElementById("firstSvg");
+            const secondSvg = document.getElementById("secondSvg");
+            firstSvg.style.display = isSecondSvg ? "none" : "block";
+            secondSvg.style.display = isSecondSvg ? "block" : "none";
+        }
+
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
