@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Syne&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500&display=swap');
 
 main {
             background: url("Images/windmill.jpeg") center/cover no-repeat;
@@ -59,6 +60,32 @@ main {
 .font-heebo{
     font-family: 'heebo';
 }
+.font-zilla{
+    font-family: 'Zilla Slab', serif;
+}
 .roundedimg{
     border-radius: 400px;
 }
+
+    .modal-card {
+        background: #4CAF50; /* Green background color */
+        color: #ffffff; /* White text color */
+    }
+
+    .modal-button {
+        color: #4CAF50; /* Green button text color */
+        background: #ffffff; /* White button background color */
+    }
+
+    .modal-button:hover {
+        background: #4CAF50; /* Green button background color on hover */
+        color: #ffffff; /* White button text color on hover */
+    }
+
+    .profile-image {
+        border: 2px solid #ffffff; /* White border around the image */
+    }
+
+    body{
+        scroll-snap-type: x mandatory;
+    }

@@ -80,8 +80,8 @@
             </div>
         </div>
     </nav>
-    <main>
-        <div class=" md:pl-10 mt-10 md:mt-0">
+    <main class="h-screen p-10 " style="background-image: url('Images/windmill.jpeg');">
+        <div class=" md:pl-10 mt-10 md:mt-0 ">
             <div class="md:text-4xl text-2xl font-medium ml-10 md-ml-20 bg-windmill">
                 <h1>ENERGY</h1>
                 <h1 class="ml-10">CONSULTANCY</h1>
@@ -91,8 +91,8 @@
             <br />
             <h1 class="text-white text-2xl md-text-4xl font-bold ml-10 md-ml-20 font-syne">
                 "FOR YOUR BETTER
-                <br /> <span class="space-y-2 text-green-900">TOMORROW</span>,
-                SAVE <br />
+                <br /> <span class="space-y-2 text-green-300">TOMORROW</span>,<br>
+                SAVE
                 ENERGY <span class="space-y-2 text-blue-500">TODAY</span>"
             </h1>
             <br />
@@ -118,13 +118,13 @@
         </div>
         <br /><br /><br /><br /><br /><br /><br />
     </main>
-    <section class="md:flex bg-green-900 section pt-10" id="about">
+    <section class="md:flex font-syne bg-green-900 section pt-10 " id="about">
         <div class="m-10 flex-1">
-            <h6 class="text-yellow-300 m-5 font-bold text-3xl flex justify-center font-syne">About us</h6>
-            <h3 class="text-black md:text-2xl text-xl my-4 font-extrabold">Department of Electrical and Electronics
+            <h6 class="text-yellow-300 m-5 font-bold text-3xl flex justify-center font-heebo">About us</h6>
+            <h3 class="text-black md:text-2xl text-xl my-4  font-extrabold">Department of Electrical and Electronics
                 Engineering
             </h3>
-            <h6 class="my-10 text-white">The Department of Electrical and Electronics Engineering offers
+            <h6 class="my-10 text-white text-justify">The Department of Electrical and Electronics Engineering offers
                 Bachelor of Engineering in Electrical and Electronics Engineering
                 and Master of Engineering in Power Systems Engineering Research
                 programmes: Ph.D. in Electrical and Electronics Engineering. The
@@ -151,28 +151,24 @@
 
 
         </div>
-        <div class="md:flex-1 md:m-10 ">
+        <div class="md:flex-1 md:m-10">
             <div class="md:flex">
                 <div data-aos="flip-left" data-aos-duration="1000">
                     <div class="bg-zinc-900 w-fit hover:shadow-2xl transition-all rounded-3xl p-7 m-4">
                         <i class="fa-solid fa-book" style="color: #2ec27e;"></i>
-                        <h6 class="text-white">Academic Programs</h6>
-                        <p class="text-gray-400">The Department of Electrical and Electronics Engineering offers
-                            Bachelor of
-                            Engineering in
-                            Electrical
-                            and Electronics
-                            Engineering, Master of Engineering in Power Systems Engineering Research, and a Ph.D.
-                            program in
-                            Electrical and
-                            Electronics Engineering.</p>
+                        <h6 class="text-white font-extrabold font-zilla">Academic Programs</h6>
+                        <p class="text-gray-400">The Department of Electrical and Electronics Engineering that offers
+                            Bachelor of Engineering in Electrical and
+                            Electronics Engineering, Master of Engineering in Power Systems Engineering Research, and a
+                            Ph.D. program in Electrical
+                            and Electronics Engineering.</p>
                     </div>
                 </div>
                 <div data-aos="flip-left" data-aos-duration="1500">
                     <div class="bg-zinc-900 w-fit shadow-2xl rounded-3xl p-7 m-4">
 
                         <i class="fa-solid fa-shield-halved" style="color: #2ec27e;"></i>
-                        <h6 class="text-white">Specializations</h6>
+                        <h6 class="text-white font-extrabold font-zilla">Specializations</h6>
                         <p class="text-gray-400">The Department specializes in various areas, including Energy Auditing
                             and
                             survey management,
@@ -189,7 +185,7 @@
                 <div data-aos="flip-left" data-aos-duration="2000">
                     <div class="bg-zinc-900 w-fit shadow-2xl rounded-3xl p-7 m-4">
                         <i class="fa-solid fa-flask" style="color: #2ec27e;"></i>
-                        <h6 class="text-white">Laboratory Facilities</h6>
+                        <h6 class="text-white font-extrabold font-zilla">Laboratory Facilities</h6>
                         <p class="text-gray-400">The department boasts well-equipped laboratories, including Machines,
                             Power
                             Analyzer, Power
@@ -200,7 +196,7 @@
                 <div data-aos="flip-left" data-aos-duration="3000">
                     <div class="bg-zinc-900 w-fit shadow-2xl rounded-3xl p-7 m-4">
                         <i class="fa-solid fa-person-chalkboard" style="color: #2ec27e;"></i>
-                        <h6 class="text-white">Experienced Faculty</h6>
+                        <h6 class="text-white font-extrabold font-zilla">Man Power</h6>
                         <p class="text-gray-400">A team of dedicated faculty members with both industry and academic
                             experience guides students in
                             their educational
@@ -222,66 +218,258 @@
                 <h6 class="text-xl">Dr. M. Vaigundamoorthi</h6>
                 <p class="text-sm">Certified energy manager</p>
                 <button
-                    class="p-3 bg-green-500 mt-4 rounded-2xl hover:bg-transparent hover:border-green-500 border-2 transition-all">Read
-                    More</button>
+                    class="p-3 bg-green-500 mt-4 rounded-2xl hover:bg-transparent hover:border-green-500 border-2 transition-all"
+                    onclick="openModal('modal1')">Read More</button>
             </div>
             <div data-aos="zoom-in" data-aos-duration="1000"
                 class="bg-white md:px-14 rounded-xl mx-10 mt-5 p-10 w-fit flex flex-col flex-wrap items-center justify-center shadow-lg transition-all1 shadow-inner1">
                 <img src="Images/balachandran.png" alt="HOD" class="w-28 rounded-full">
-                <h6 class="text-xl">Dr. M. balachandran</h6>
+                <h6 class="text-xl">Dr. balachandran</h6>
                 <p class="text-sm">Certified energy manager</p>
                 <button
-                    class="p-3 bg-green-500 mt-4 rounded-2xl hover:bg-transparent hover:border-green-500 border-2 transition-all">Read
+                    class="p-3 bg-green-500 mt-4 rounded-2xl hover:bg-transparent hover:border-green-500 border-2 transition-all"
+                    onclick="openModal('modal2')">Read
                     More</button>
 
             </div>
             <div data-aos="zoom-in" data-aos-duration="900"
                 class="bg-white md:px-14 rounded-xl mx-10 mt-5 p-10 w-fit flex flex-col flex-wrap items-center justify-center shadow-lg transition-all1 shadow-inner1">
                 <img src="Images/nagaveni.png" alt="HOD" class="w-28 rounded-full">
-                <h6 class="text-xl">Dr. M. Nagaveni</h6>
+                <h6 class="text-xl">Dr. P. Nagaveni</h6>
                 <p class="text-sm">Certified energy manager</p>
                 <button
-                    class="p-3 bg-green-500 mt-4 rounded-2xl hover:bg-transparent hover:border-green-500 border-2 transition-all">Read
+                    class="p-3 bg-green-500 mt-4 rounded-2xl hover:bg-transparent hover:border-green-500 border-2 transition-all"
+                    onclick="openModal('modal3')">Read
                     More</button>
 
             </div>
             <div data-aos="zoom-in" data-aos-duration="1000"
                 class="bg-white md:px-14 rounded-xl mx-10 mt-5 p-10 w-fit flex flex-col flex-wrap items-center justify-center shadow-lg transition-all1 shadow-inner1">
                 <img src="Images/selvaganapathi.png" alt="HOD" class="w-28 rounded-full">
-                <h6 class="text-xl">Dr. M. Selvaganapathi</h6>
+                <h6 class="text-xl">Dr. T. Selvaganapathi</h6>
                 <p class="text-sm">Certified energy manager</p>
                 <button
-                    class="p-3 bg-green-500 mt-4 rounded-2xl hover:bg-transparent hover:border-green-500 border-2 transition-all">Read
-                    More</button>
-
+                    class="p-3 bg-green-500 mt-4 rounded-2xl hover:bg-transparent hover:border-green-500 border-2 transition-all"
+                    onclick="openModal('modal4')">Read More</button>
             </div>
             <div data-aos="zoom-in" data-aos-duration="1000"
                 class="bg-white md:px-14 rounded-xl mx-10 mt-5 p-10 w-fit flex flex-col flex-wrap items-center justify-center shadow-lg transition-all1 shadow-inner1">
                 <img src="Images/sivaramkumar.png" alt="HOD" class="w-28 rounded-full">
-                <h6 class="text-xl">Dr. Sivaramkumar</h6>
+                <h6 class="text-xl">Dr. M.Sivaramkumar</h6>
                 <p class="text-sm">Certified energy manager</p>
                 <button
-                    class="p-3 bg-green-500 mt-4 rounded-2xl hover:bg-transparent hover:border-green-500 border-2 transition-all">Read
+                    class="p-3 bg-green-500 mt-4 rounded-2xl hover:bg-transparent hover:border-green-500 border-2 transition-all"
+                    onclick="openModal('modal5')">Read
                     More</button>
 
             </div>
+            <div class="text-justify  absolute w-fit max-w-lg">
+                <div id="modal1" class="hidden">
+                    <div class="bg-gradient-to-r from-blue-400 to-green-400 p-6 rounded-lg shadow-md relative">
+                        <button type="button"
+                            class="absolute top-2 right-2 text-green-800 hover:text-white border border-green-700 hover:bg-blue-400 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+                            onclick="closeModal()">X</button>
+                        <div class="flex items-center">
+                            <img src="Images/vaigundamoorthihod.png" alt="HOD" class="w-32 rounded-full">
+                            <div class="ml-4">
+                                <h6 class="text-xl md:text-xl font-extrabold">Dr.M.vaigundamoorthi</h6>
+                                <p class="text-sm md:text-sm">Certified energy manager</p>
+                            </div>
+                        </div>
+                        <p class="text-justify m-3">Dr.M. Vaigundamoorthi. Working as Professor in the department of
+                            Electrical
+                            and Electronics
+                            Engineering, Karpagam Academy of Higher Education, Coimbatore 641021- India.
+                            He received his B.E- Electrical & Electronics Engg degree from Madurai Kamaraj University
+                            during
+                            the year 2002
+                            He received his Master of Engineering degree (Power Electronics &Drives) and Ph.D. Degree in
+                            the
+                            area of Power electronics DC-DC converter for solar PV from College of Engineering Guindy
+                            Anna
+                            University, Chennai, India in 2007 &2013 respectively. He is having 20 years of teaching
+                            experience and has published 10 research articles in reputed international journals and 4
+                            patents. His area of interest includes Power Electronics for Renewable Energy System,
+                            controller
+                            design, Nonlinear dynamics analysis in solar PV system.<br> Email :
+                            bacyavaigo2000@gmail.com<br>
+                            Orchid ID : 0000-0002-4805-7802<br> Scopus ID:  24605735500 <br>Ph :9445898955</p>
+                    </div>
+                </div>
+                <div id="modal2" class="hidden">
+                    <div class="bg-gradient-to-r from-blue-400 to-green-400 p-6 rounded-lg shadow-md relative">
+                        <button type="button"
+                            class="absolute top-2 right-2 text-green-800 hover:text-white border border-green-700 hover:bg-blue-400 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+                            onclick="closeModal()">X</button>
+                        <div class="flex items-center">
+                            <img src="Images/balachandran.png" alt="HOD" class="w-32 rounded-full">
+                            <div class="ml-4">
+                                <h6 class="text-xl md:text-xl font-extrabold">Dr. Balachandran</h6>
+                                <p class="text-sm md:text-sm">Certified energy manager</p>
+                            </div>
+                        </div>
+                        <p>Dr. Balachander Kalappan received the Diploma in Electrical and
+                            ElectronicsEngineering from PSG Polytechnic, Coimbatore in 1993 and
+                            Bachelordegree in Electrical and Electronics Engineering from Coimbatore Instituteof
+                            Technology, Coimbatore in 2001. He acquired Master of Engineering in VLSI Design
+                            from Anna University Coimbatore in 2009, PG Diploma in Electrical Energy
+                            Management and Auditing from Annamalai University, Chidambaram in 2015 and
+                            doctorate in Electrical and Electronics Engineering from Karpagam Academy of
+                            Higher Education, Karpagam University, Coimbatore in 2017. He is working as an Associate
+                            Professor in
+                            Department of Electrical and Electronics Engineering, Faculty of Engineering, Karpagam
+                            Academy of
+                            Higher Education, India. He has totally around 18 years of teaching experience and 7 years
+                            of industry
+                            experience. He has published around 110 National and international Journal papers and 35
+                            papers in
+                            Conference proceedings. He is a recognized reviewer in many reputed journals like Springer,
+                            Inderscience,
+                            etc. He is also a member of ISTE, IE (I), IAENG, IRED, IACSIT. His areas of interests are
+                            Renewable
+                            Energy Optimization, Smart grid and Distributed Generation.</p>
+                    </div>
+                </div>
+                <div id="modal3" class="hidden mt-96 md:mt-0">
+                    <div class="bg-gradient-to-r from-blue-400 to-green-400 p-6 rounded-lg shadow-md relative">
+                        <button type="button"
+                            class="absolute top-2 right-2 text-green-800 hover:text-white border border-green-700 hover:bg-blue-400 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+                            onclick="closeModal()">X</button>
+                        <div class="flex items-center">
+                            <img src="Images/nagaveni.png" alt="HOD" class="w-32 rounded-full">
+                            <div class="ml-4">
+                                <h6 class="text-xl md:text-xl font-extrabold">Dr. P. Nagaveni</h6>
+                                <p class="text-sm md:text-sm">Certified energy manager</p>
+                            </div>
+                        </div>
+                        <p>Mrs. P. Nagaveni, BEE Certified Energy Manager (Ministry of Power), completed her
+                            Diploma in Electrical and Electronics Engineering at Nachimuthu Polytechnic College and her
+                            B.E. Degree in Electrical and Electronics Engineering at Hindusthan College of Engineering,
+                            Coimbatore, in the year 2011. Then she completed her M.E. degree in Energy Engineering at
+                            Kumaraguru College of Engineering and Technology, Coimbatore, in 2013. She is also doing a
+                            Ph.D. in Electrical and electronic engineering at Karpagam Academy of Higher Education,
+                            Karpagam University, Coimbatore. Since June 2019, she has been working as an Assistant
+                            Professor in the Department of Electrical and Electronics Engineering at Karpagam Academy of
+                            Higher Education (Karpagam University), Coimbatore. The current research area is on
+                            Electrical
+                            Energy Audit and Power Quality management. We completed auditing and implemented
+                            solutions for M.S.K. Engineering Works, National Model School, Best Heat Treatment Service,
+                            etc.</p>
+                    </div>
+                </div>
+                <div id="modal4" class="hidden md:mt-96 mt-96">
+                    <div class="bg-gradient-to-r from-blue-400 to-green-400 p-6 rounded-lg shadow-md relative">
+                        <button type="button"
+                            class="absolute top-2 right-2 text-green-800 hover:text-white border border-green-700 hover:bg-blue-400 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+                            onclick="closeModal()">X</button>
+                        <div class="flex items-center">
+                            <img src="Images/selvaganapathi.png" alt="HOD" class="w-32 rounded-full">
+                            <div class="ml-4">
+                                <h6 class="text-xl md:text-xl font-extrabold">Dr. T. Selvaganapathi</h6>
+                                <p class="text-sm md:text-sm">Certified energy manager</p>
+                            </div>
+                        </div>
+                        <p>T. selvaganapathi, M.E power Electronics and Drives
+                            selvaganapathi.thangakaleeswaran@kahedu.edu.in
+                            Area of Interest: Power Electronics and Drives, Design of Transformer winding</p>
+                    </div>
+                </div>
+                <div id="modal5" class="hidden md:mt-80 mt-96">
+                    <div class="bg-gradient-to-r from-blue-400 to-green-400 p-6 rounded-lg shadow-md relative">
+                        <button type="button"
+                            class="absolute top-2 right-2 text-green-800 hover:text-white border border-green-700 hover:bg-blue-400 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+                            onclick="closeModal()">X</button>
+                        <div class="flex items-center">
+                            <img src="Images/sivaramkumar.png" alt="HOD" class="w-32 rounded-full">
+                            <div class="ml-4">
+                                <h6 class="text-xl md:text-xl font-extrabold">Dr. M.Sivaramkumar</h6>
+                                <p class="text-sm md:text-sm">Certified energy manager</p>
+                            </div>
+                        </div>
+                        <p>Dr.M. Siva Ramkumar was born on December 6, 1989, in Coimbatore, Tamil
+                            Nadu, India. completed his B.E Degree in Electrical and Electronics Engineering at
+                            Karpagam College of Engineering, Coimbatore, in the year 2011. Then he completed
+                            his M.E degree in Power Electronics and Drives at Sri Shakthi Institute of Engineering
+                            and Technology, Coimbatore, in the year 2013.  Also Ph.D. in Electrical and Electronics
+                            at Karpagam Academy of Higher Education, Karpagam University, Coimbatore in the
+                            Year Jan 2019. Since June 2013, he is working as an Assistant Professor in the
+                            Department of Electrical and Electronics Engineering at Karpagam Academy of Higher
+                            Education, (Karpagam University), Coimbatore. He has produced one Ph.D. Candidate
+                            and 4 candidates pursuing Ph.D. under his guidance. He has also supervised over 50
+                            UG and PG projects. the current research area is on Power Converters, dealing with the
+                            Design and Analysis of Rectifiers, Chopper, and Inverters. Also, he has expertise in
+                            Solar PV and EV Sizing, Design, and Analysis</p>
+                    </div>
+                </div>
+                <div id="modal6" class="hidden">
+                    <div class="bg-gradient-to-r from-blue-400 to-green-400 p-6 rounded-lg shadow-md relative">
+                        <button type="button"
+                            class="absolute top-2 right-2 text-green-800 hover:text-white border border-green-700 hover:bg-blue-400 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+                            onclick="closeModal()">X</button>
+                        <div class="flex items-center">
+                            <img src="Images/vaigundamoorthihod.png" alt="HOD" class="w-32 rounded-full">
+                            <div class="ml-4">
+                                <h6 class="text-xl md:text-xl font-extrabold">Dr. M. vaigundamoorthihod</h6>
+                                <p class="text-sm md:text-sm">Certified energy manager</p>
+                            </div>
+                        </div>
+                        <p class="text-justify m-3">Dr.M. Vaigundamoorthi. Working as Professor in the department of
+                            Electrical
+                            and Electronics
+                            Engineering, Karpagam Academy of Higher Education, Coimbatore 641021- India.
+                            He received his B.E- Electrical & Electronics Engg degree from Madurai Kamaraj University
+                            during
+                            the year 2002
+                            He received his Master of Engineering degree (Power Electronics &Drives) and Ph.D. Degree in
+                            the
+                            area of Power electronics DC-DC converter for solar PV from College of Engineering Guindy
+                            Anna
+                            University, Chennai, India in 2007 &2013 respectively. He is having 20 years of teaching
+                            experience and has published 10 research articles in reputed international journals and 4
+                            patents. His area of interest includes Power Electronics for Renewable Energy System,
+                            controller
+                            design, Nonlinear dynamics analysis in solar PV system.<br> Email :
+                            bacyavaigo2000@gmail.com<br>
+                            Orchid ID : 0000-0002-4805-7802<br> Scopus ID:  24605735500 <br>Ph :9445898955</p>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                function openModal(modalId) {
+                    var modal = document.getElementById(modalId);
+                    if (modal) {
+                        modal.style.display = "block";
+                    }
+                }
+
+                function closeModal(modelID) {
+                    document.getElementById('modal1').style.display = 'none';
+                    document.getElementById('modal2').style.display = 'none';
+                    document.getElementById('modal3').style.display = 'none';
+                    document.getElementById('modal4').style.display = 'none';
+                    document.getElementById('modal5').style.display = 'none';
+
+                }
+            </script>
+
         </div>
         <br>
     </section>
-    <section id="services">
+    <section id="services" class="capitalize">
         <h1 class="flex justify-center text-2xl font-extrabold mt-10 font-syne" id="our-works">Our Services</h1>
-        <p class="flex justify-center mx-5 my-2 text-yellow-900">Powering Progress with Expert Electrical Services. Your
+        <p class="flex justify-center mx-5 my-2 text-gray-400">Powering Progress with Expert Electrical Services. Your
             Trusted Partner for a
             Brighter Tomorrow.</p>
 
-        <div class="flex flex-wrap font-syne justify-evenly">
+        <div class="flex flex-wrap font-syne justify-evenly text-justify">
             <div class="w-fit flex flex-col items-center m-12" data-aos="zoom-out-up" data-aos-duration="1000">
                 <div class="absolute text-9xl font-Agbalumo opacity-20">01</div>
                 <div class="flex justify-center mt-24 z-50 text-black font-extrabold text-2xl font-heebo">Electrical
                     Distribution
-                    system</div>
+                    System</div>
                 <div class="align-bottom max-w-xs ">An Electrical Distribution System is vital for efficient power
-                    transmission in buildings. It comprises transformers,
+                    transmission in buildings.It comprises transformers,
                     switchgear, and panels, guaranteeing safe and reliable electricity distribution, a core aspect of
                     our electrical
                     consultancy services.</div>
@@ -289,7 +477,7 @@
             <div class="w-fit flex flex-col items-center m-12" data-aos="zoom-out-up" data-aos-duration="1500">
                 <div class="absolute text-9xl font-Agbalumo opacity-20">02</div>
                 <div class="flex justify-center mt-24 z-50 text-black font-extrabold text-2xl font-heebo">PF Improvement
-                    study</div>
+                    Study</div>
                 <div class="align-bottom max-w-xs ">Our Power Factor Improvement (PF) Study is a crucial service aimed
                     at enhancing energy efficiency. We analyze and
                     optimize power factor correction solutions, resulting in reduced energy costs and improved system
@@ -370,7 +558,7 @@
 
     </section>
     <section class="bg-slate-200 p-20" data-aos="fade-up">
-        <h1 class="m-10 flex justify-center font-syne font-extrabold text-2xl"> Our Works</h1>
+        <h1 class="m-10 flex justify-center font-syne font-extrabold text-2xl">Gallery</h1>
 
         <div class="grid md:grid-cols-4 md:gap-3 grid-cols-1 gap-4 items-center content-center">
             <img src="Images/work4.jpeg" alt="work"
@@ -411,8 +599,8 @@
         </div>
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.6046292254923!2d76.98510817426192!3d10.91762238923985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba85af2d5b63f75%3A0x958123c48e7c849d!2sKarpagam%20Academy%20of%20Higher%20Education!5e0!3m2!1sen!2sin!4v1699178050594!5m2!1sen!2sin"
-            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" class="mt-4 md:mt-0 hidden md:block"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            class="mt-4 md:mt-0 hidden md:block" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </footer>
 
 
@@ -443,6 +631,7 @@
 
     </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="techhtml-main/index.js"></script>
     <script>
         AOS.init();
     </script>
